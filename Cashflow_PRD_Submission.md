@@ -321,3 +321,35 @@ If the product were failing to deliver, customers would report the marketing as 
 | Cashflow Analyzer | Revenue data | Feasibility rating |
 | Feedback Agent | Customer feedback | RL training data |
 | Marketing Material DR | CDP Marketing | Messaging accuracy assessment |
+
+---
+
+## Assumptions Made
+
+| Assumption | Rationale |
+|------------|-----------|
+| CDP provides real-time data (not batch) | RL requires timely state updates for accurate decisions |
+| RL model trains offline, deploys online | Online training is risky for pricing (expensive mistakes) |
+| Pricing experiments have ~2-4 week cycles | Need enough data to measure churn/adoption effects |
+| Competitor prices are publicly available | Required for Competitor DeepResearch agent |
+
+## Questions I Would Ask
+
+1. **Latency requirements?** Does pricing need to be real-time or is daily batch acceptable?
+2. **Regulatory constraints?** Any legal limits on dynamic pricing in your markets?
+3. **Existing data infrastructure?** Kafka, Spark, data warehouse tech?
+4. **Current pricing process?** Fully manual, rule-based, or already some automation?
+5. **Success metrics?** Revenue? Churn reduction? Market share?
+
+---
+
+## If I Had More Time
+
+| Priority | Enhancement | Impact |
+|----------|-------------|--------|
+| 1 | **Causal inference layer** - Determine WHY churn happens, not just correlation | Better root cause analysis |
+| 2 | **Multi-objective Pareto optimization** - Instead of weighted sum | Clearer trade-off decisions |
+| 3 | **A/B test framework** - Safe deployment with statistical rigor | Reduced risk |
+| 4 | **Explainability dashboard** - For non-technical stakeholders | Better adoption |
+| 5 | **Real-time adaptation** - Online learning for immediate market response | Faster reaction |
+
