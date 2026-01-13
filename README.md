@@ -69,9 +69,12 @@ R(s, a) = 0.3 × ΔRevenue + 0.4 × ΔCLTV + 0.2 × AdoptionRate - 0.1 × ChurnP
 ## 📂 Repository Structure
 
 ```
-├── Cashflow_PRD_Submission.md    # Complete technical PRD
+├── Cashflow_PRD_Submission.md    # Complete consolidated PRD
+├── Part1_System_Architecture.md  # System architecture & data flow
+├── Part2_RL_Strategy_Memo.md     # RL reward function & state space
+├── Part3_Gap_Analysis.md         # Strategic gap analysis
 ├── Assignment (1) (1).pdf        # Original assignment
-├── Pricing.pdf                   # Pricing reference data
+├── Pricing.pdf                   # Pricing reference data (CSV)
 ├── image (40).png.pdf            # System flow diagram
 └── README.md                     # This file
 ```
@@ -80,9 +83,12 @@ R(s, a) = 0.3 × ΔRevenue + 0.4 × ΔCLTV + 0.2 × AdoptionRate - 0.1 × ChurnP
 
 ## 🎯 Key Deliverables
 
-1. **Part 1: System Architecture** - 5-stage pipeline with data flow diagrams
-2. **Part 2: RL Strategy** - Reward function, state space, action space definitions
-3. **Part 3: Gap Analysis** - Strategic assessment of pricing vs product vs targeting issues
+| Part | Document | Description |
+|------|----------|-------------|
+| 1 | [Part1_System_Architecture.md](./Part1_System_Architecture.md) | 5-stage pipeline with data flow diagrams |
+| 2 | [Part2_RL_Strategy_Memo.md](./Part2_RL_Strategy_Memo.md) | Reward function, state space, action space |
+| 3 | [Part3_Gap_Analysis.md](./Part3_Gap_Analysis.md) | Strategic assessment of pricing issues |
+| All | [Cashflow_PRD_Submission.md](./Cashflow_PRD_Submission.md) | Complete consolidated PRD |
 
 ---
 
